@@ -1,0 +1,103 @@
+<html>
+<body style="background-color:#87CEEB;">
+<head>
+<meta charset =	 "utf-8">
+<title>PROFILE</title>
+<style type="text/css"></style>
+<style>
+a:link {
+	color:black;
+}
+a:visited {
+	color:red;
+}
+a:hover {
+	color: white;
+}
+a:active {
+	color:black;
+}
+a {
+	text-decoration: none;
+}
+a:link, a:visited {
+	background-color: #000080;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
+a:hover, a:active {
+	background-color: blue;
+	color: navy blue;
+}
+body {
+	background-image: url("Cool Sky.jpg");
+	background-repeat: repeat-y;
+}
+h3 {
+	 text-align: right;
+}
+.p1 {
+	font-family: "Times New Roman", Times, serif;
+}
+</style>
+</head>
+<body>
+<div bg>
+<h3>
+<font face = "Sans-Serif" size = "5">
+<a href="homepage.html"><span style ="cursor: pointer">Home</a> |
+<a href="overview.html"><span style ="cursor: pointer">Overview</a>  |
+<a href="members.html"><span style ="cursor: pointer">Members</span></a> |
+<a href="multimedia.html"><span style ="cursor: pointer">Multimedia</span></a> |
+<a href="discography.html"><span style ="cursor: pointer">Discography</span></a> |
+<b><span style="cursor:no-drop">Profile</span></b><br>
+</font>
+</h3>
+<h2 id="demo">Good evening human!</h2>
+<script>
+if (new Date().getHours() < 18) {
+  document.getElementById("demo").innerHTML = "Good day human!";
+}
+</script>
+<form>
+	<h2 class= "p1">Username:</h2>
+	<input type="text" name="firstname"><br>
+</form>
+<form>
+	<h2 class= "p1">Password:</h2>
+	<input type="password' name="pwd"><br><br>
+</form>
+<form>
+	<h2>Are you a:</h2>
+	<input type="radio" name="gender" value="male"> Male<br>
+	<input type="radio" name="gender" value="female"> Female<br>
+	<input type="radio" name="gender" value="other"> Other<br><br>
+</form>
+<form>
+<h2>Any suggestions and feedback? Please write below.</h2>
+	<textarea rows="20" cols="50">
+	
+	</textarea><br><br>
+</form>
+<form>
+<h2>Location:</h2>
+	<select name="location">
+		<option value "Location">Location</option>
+		<option value "Ph">Philippines</option>
+		<option value "USA">USA</option>
+		<option value "South Korea">South Korea</option>
+		<option value "Others">Others</option>
+	</select>
+</form><br><br>
+<form>
+<h2>Do you like Twice?</h2>
+<input type="checkbox" name="yes1" value="Yes"> Yes<br>
+<input type="checkbox" name="or" value="Or"> Or<br>
+<input type="checkbox" name="yes2" value="Yes"> Yes<br>
+<input type="submit" value="Submit"><br>
+</form>
+</body>
+</html>
